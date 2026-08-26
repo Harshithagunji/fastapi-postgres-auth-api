@@ -50,7 +50,7 @@ def test_login_user():
     assert 'access_token' in data
     assert data['token_type']=='bearer'
 
-    headers={'Authorization': f'Bearer {data['access_token']}'}
+    headers={'Authorization': f"Bearer {data['access_token']}"}
 
     #testing book CRUD
 
