@@ -8,4 +8,4 @@ python-jose[cryptography]
 bcrypt
 python-multipart
 pytest
-httpx
+httpx2
