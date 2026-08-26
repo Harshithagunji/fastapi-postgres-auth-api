@@ -1,0 +1,12 @@
+
+version: '3.8'
+
+services:
+  web:
+   build: .
+   container_name: my-running-app
+   ports:
+     - "8000:8000"
+   environment:
+     - SQLALCHEMY_DATABASE_URL=postgresql://postgres:123456@host.docker.internal:5432/bookstore
+   restart: always
